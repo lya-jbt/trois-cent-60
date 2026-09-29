@@ -2,3 +2,33 @@
 @import "base";
 @import "layout";
 @import "modules/example";
+@import "modules/card";
+
+header{
+    height: 100vh;
+    background-color:#FFFFFF;
+    color: #4200F6;
+}
+.news{
+    height: 100vh;
+    background-color:#4200F6;
+    color:#FFFFFF;
+}
+.events{
+    height: 100vh;
+    background-color: #1B1515;
+    color: #CFF665;
+}
+.favorite{
+    height: 100vh;
+    background-color:#F238A7 ;
+}
+.why{
+    height:80vh;
+    background-color: #CFF665;
+    color: #4200F6;
+}
+footer{
+    height: 40vh;
+    background-color: #1B1515;
+}
