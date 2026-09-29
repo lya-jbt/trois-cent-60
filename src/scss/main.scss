@@ -3,8 +3,11 @@
 @import "layout";
 @import "modules/example";
 @import "modules/card";
-
 header{
+    top:0;
+    position:sticky;
+}
+.hero{
     height: 100vh;
     background-color:#FFFFFF;
     color: #4200F6;
