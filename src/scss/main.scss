@@ -3,35 +3,58 @@
 @import "layout";
 @import "modules/example";
 @import "modules/card";
+
+h2{
+    font-family: "elza-condensed", sans-serif;
+    text-align: center;  
+    letter-spacing: -5.7px;
+    
+}
+p{
+    font-size: 20px;
+}
 header{
     top:0;
     position:sticky;
+    padding: 36px;
 }
 .hero{
     height: 100vh;
     background-color:#FFFFFF;
     color: #4200F6;
+    padding: 36px;
 }
 .news{
     height: 100vh;
     background-color:#4200F6;
     color:#FFFFFF;
+    font-size: 14rem;
+    padding: 36px;
 }
 .events{
     height: 100vh;
     background-color: #1B1515;
     color: #CFF665;
+    font-size: 13rem;
+   padding: 36px;
 }
 .favorite{
     height: 100vh;
     background-color:#F238A7 ;
+    font-size: 9vw;
+    padding: 36px;
+    line-height: 180%;
 }
 .why{
     height:80vh;
     background-color: #CFF665;
     color: #4200F6;
+    font-size: 5vw;
+    padding: 36px;
+    line-height: 180%;
 }
 footer{
     height: 40vh;
     background-color: #1B1515;
+    padding: 36px;
 }
