@@ -1,0 +1,28 @@
+.big-card{
+    // width: 251px;
+    // height: 417px;
+    position: relative;
+    color: var(--color-blue)
+}
+.big-card img{
+    width:100%;
+}
+.big-card h3 {
+    font-family: var(--font-elzacondensed);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 103%; 
+    letter-spacing: -0.684px;
+}
+
+.overlay {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
