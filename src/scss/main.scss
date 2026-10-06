@@ -1,17 +1,54 @@
+@import "variables";
 @import "font";
 @import "base";
 @import "layout";
 @import "modules/example";
 @import "modules/card";
+@import "modules/header";
+
+h1{ 
+    font-family: var(--font-helveticaneue);
+    text-align: center;
+    font-size: 82.474px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    letter-spacing: -1.567px;
+}
+.name{
+    font-family: var(--font-elzacondensed);
+    font-size: 82.474px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 143%; 
+    letter-spacing: -1.567px;
+}
+.first{
+    font-family: Elza;
+    font-size: 82.474px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 143%;
+    letter-spacing: -1.567px;
+}
+.art{
+    font-family: "ballet-variable", sans-serif;
+    font-size: 82.474px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    letter-spacing: -1.567px;
+}
 
 h2{
-    font-family: "elza-condensed", sans-serif;
+    font-family: var(--font-elzacondensed);
     text-align: center;  
     letter-spacing: -5.7px;
     
 }
 p{
     font-size: 20px;
+    font-family: var(--font-helveticaneue);
 }
 header{
     top:0;
@@ -20,35 +57,35 @@ header{
 }
 .hero{
     height: 100vh;
-    background-color:#FFFFFF;
-    color: #4200F6;
+    background-color:var(--color-white);
+    color: var(--color-blue);
     padding: 36px;
 }
 .news{
     height: 100vh;
-    background-color:#4200F6;
-    color:#FFFFFF;
+    background-color: var(--color-blue);
+    color:var(--color-white);
     font-size: 14rem;
     padding: 36px;
 }
 .events{
     height: 100vh;
-    background-color: #1B1515;
-    color: #CFF665;
+    background-color: var(--color-black);
+    color: var(--color-green);
     font-size: 13rem;
    padding: 36px;
 }
 .favorite{
     height: 100vh;
-    background-color:#F238A7 ;
+    background-color:var(--color-pink);
     font-size: 9vw;
     padding: 36px;
     line-height: 180%;
 }
 .why{
     height:80vh;
-    background-color: #CFF665;
-    color: #4200F6;
+    background-color: var(--color-white);
+    color: var(--color-blue);
     font-size: 5vw;
     padding: 36px;
     line-height: 180%;
