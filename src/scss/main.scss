@@ -131,17 +131,14 @@ html {
 .section-cards {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: clamp(1rem, 6vw, 4rem);
-    align-items: stretch;
     margin: 1rem auto 0;
     width: 100%;
-    max-width: 1200px;
+    
 }
 .big-card {
     display: flex;
     flex-direction: column;
     min-width: 0;
-    background-color: var(--color-white);
     color: var(--color-blue);
     text-decoration: none;
     overflow: hidden;
@@ -155,11 +152,10 @@ html {
 
 .big-card-text{
   position: absolute;
-  gap: 12px;
-  bottom: 12px;
+  bottom: 16px;
   left: 14px;
   right: 8px;
-  margin: 13px;
+  margin: 9px;
   line-height: 1; 
 }
 .events{
@@ -176,17 +172,24 @@ html {
     min-height: 100vh;
     background-color:var(--color-pink);
     font-size: 9vw;
-    padding: 36px;
-    line-height: 180%;
+    padding: 24px;
+    line-height: 150%;
     
-}
-.favorite-cards{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
 }
 .favorite h4{
     font-family: var(--font-elzacondensed);
     font: 24px;
+}
+.favorite-title {
+    margin-top: -50px;
+}
+.favorite-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
 }
 .small-card{
   position:relative;
@@ -211,15 +214,18 @@ html {
   font-weight: 900;
   line-height: 1;
 }
-button {
+.button {
+    display:flexbox;
+    text-decoration: none;
+    width: fit-content;
     background-color:var(--color-black);
     color:var(--color-white);
     font-family: var(--font-helveticaneue);
-    font-size: large;
-    text-decoration: none;
+    font-size: 16px;
     border: none;
-    padding: 0.2em 0.6em;
-    cursor: pointer;
+    padding: 1em 2em;
+    margin-left:1270px;
+    margin-bottom: 100px;
     
 }
 .why{
@@ -241,6 +247,14 @@ button {
     line-height: 1.35;
     max-width: 1300px;
     margin: 0;
+}
+.why svg{
+    width: 1129.559px;
+    height: 617.076px;
+    transform: rotate(10.03deg);
+    z-index: -1;
+    margin-top: -470px;
+    margin-left: 350px;
 }
 .reel-to-real {
     min-height: 100vh;
@@ -316,10 +330,21 @@ footer  p {
     margin: 0;
     opacity: 50%;
 }
+.article-body{
+   background-color: var(--color-pink);
+}
 .article-page{
     background-color: var(--color-pink);
     color: var(--color-black);
+    min-height: 65vh;
  
+}
+.back-link{
+  
+    font-family: var(--font-helveticaneue);
+    text-decoration: none;
+    padding: 36px ;
+   
 }
 .about-supremnova {
     min-height: 100vh;
@@ -327,3 +352,59 @@ footer  p {
     color: var(--color-pink);
     padding: 36px
 }
+
+.article-page img {
+    max-width: 500px;
+    height: auto;
+    margin-top: 70px;
+}
+.article-page h2 {
+    font-family: var(--font-elzacondensed);
+    font-size: 136px;
+    text-align: right;
+    letter-spacing:normal;
+    margin-right: 400px;
+    margin-top: -540px;
+}
+.article-page p {
+    font-family: var(--font-helveticaneue);
+    font-size: 20px;
+    text-align: left;
+    letter-spacing:normal;
+    margin-right: 50px;
+    margin-left: 600px;
+    margin-top: -5px;
+}
+.about-supremnova{
+    max-height: 60vh;
+}
+.about-supremnova h2{
+    font-family: var(--font-elzacondensed);
+    font-size: 136px;
+    text-align: left;
+    letter-spacing:normal;
+    line-height: 90%;
+    margin-left: 5px;
+    margin-right:700px;
+    margin-top: 20px;
+}
+.about-supremnova p {
+    font-family: var(--font-helveticaneue);
+    font-size: 20px;
+    text-align: left;
+    letter-spacing:normal;
+    margin-right:450px;
+    margin-left: 5px;
+    margin-top: 24px;
+    line-height: 150%;
+}
+.about-supremnova img {
+    max-width: 450px;
+    height: auto;
+    margin-top: -400px;
+    display: block;
+    width: 30%;
+    height: auto;
+    margin-left: 1040px;
+}
+
