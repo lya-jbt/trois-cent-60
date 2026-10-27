@@ -14,6 +14,7 @@ h1{
     font-weight: 400;
     line-height: 143%;
     letter-spacing: -1.567px;
+    margin-top: 125px;
 }
 .name{
     font-family: var(--font-elzacondensed);
@@ -82,10 +83,36 @@ header{
 }
 .hero{
     min-height: 100vh;
-    background-color:var(--color-white);
+    background-color: var(--color-white);
     color: var(--color-blue);
     padding: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.discover-btn {
+    font-family: var(--font-helveticaneue);
+    display: inline-block;
+    margin-top: 8rem;
+    padding: 12px 28px;
+    border: 1px solid var(--color-blue);
+    color: var(--color-blue);
+    background-color: transparent;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.discover-btn:hover {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+    
+
 .news{
     min-height: 100vh;
     background-color: var(--color-blue);
@@ -93,8 +120,38 @@ header{
     font-size: 14rem;
     padding: 36px;
 }
-
-
+.news h2 {
+    font-family: var(--font-elzacondensed);
+    text-align: center;
+    letter-spacing: -5.7px;
+}
+.news .big-titles {
+    margin-top: -70px;
+}
+.section-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(1rem, 6vw, 4rem);
+    align-items: stretch;
+    margin: 1rem auto 0;
+    width: 100%;
+    max-width: 1200px;
+}
+.big-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: var(--color-white);
+    color: var(--color-blue);
+    text-decoration: none;
+    overflow: hidden;
+}
+.big-card .overlay {
+    position: static;
+    background-color: var(--color-white);
+    color: var(--color-blue);
+    flex: 1;
+}
 
 .big-card-text{
   position: absolute;
@@ -111,6 +168,9 @@ header{
     color: var(--color-green);
     font-size: 13rem;
    padding: 36px;
+}
+.events .big-titles {
+    margin-top: -70px;
 }
 .favorite{
     min-height: 100vh;
@@ -181,6 +241,18 @@ button {
     line-height: 1.35;
     max-width: 1300px;
     margin: 0;
+}
+.reel-to-real {
+    min-height: 100vh;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    padding: 36px;
+    font-size:12.5rem;
+    text-transform: uppercase;
+}
+
+.reel-to-real .big-titles {
+    margin-top: -70px;
 }
 
 footer {
