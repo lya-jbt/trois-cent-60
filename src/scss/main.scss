@@ -99,7 +99,6 @@ p {
   );
 }
 
-
 .site-header .logo {
   display: block;
   flex-shrink: 0;
@@ -233,8 +232,6 @@ html {
   line-height: 1;
 }
 
-
-
 .events {
   min-height: auto;
   padding: 2.25rem;
@@ -242,7 +239,6 @@ html {
   color: var(--color-white);
   overflow: hidden;
 }
-
 
 .events .big-titles {
   font-family: var(--font-elzacondensed);
@@ -254,7 +250,6 @@ html {
   color: var(--color-green);
   margin: 0 0 4rem;
 }
-
 
 .events-cards {
   display: grid;
@@ -269,7 +264,7 @@ html {
 }
 
 .event-card h3 {
-    font-family: var(--font-helveticaneue);
+  font-family: var(--font-helveticaneue);
   min-height: 3.5rem;
   margin: 0;
   font-size: 1.125rem;
@@ -299,7 +294,6 @@ html {
   color: var(--color-black);
   text-decoration: none;
 }
-
 
 .favorite {
   min-height: 100vh;
@@ -365,7 +359,6 @@ html {
   padding: 1em 2em;
   margin-left: 79.375rem;
   margin-bottom: 6.25rem;
-  
 }
 
 .why {
@@ -500,7 +493,7 @@ html {
   padding: 0.625rem 0.875rem;
   border: none;
   background-color: var(--color-red);
-  color: white;
+  color: var(--color-white);
   font-size: 1.3rem;
   cursor: pointer;
 }
@@ -511,7 +504,7 @@ html {
   width: 1.625rem;
   height: 1.625rem;
   border-radius: 50%;
-  background: white;
+  background: var(--color-white);
   color: var(--color-red);
   font-size: 0.8125rem;
 }
@@ -528,8 +521,8 @@ html {
 footer {
   position: relative;
   min-height: 50vh;
-  background-color: #1b1515;
-  color: #9af0e3;
+  background-color: var(--color-black);
+  color: var(--color-cyan);
   padding: 1.5rem;
   overflow: hidden;
 }
@@ -597,12 +590,10 @@ footer p {
   min-height: 65vh;
 }
 
-
 .back-link {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-
   font-family: var(--font-helveticaneue);
   text-decoration: none;
   padding: 2.25rem;
@@ -612,7 +603,6 @@ footer p {
   display: block;
   flex-shrink: 0;
 }
-
 
 .about-supremnova {
   min-height: 100vh;
@@ -686,16 +676,12 @@ footer p {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-
-font-family: var(--font-helveticaneue);
+  font-family: var(--font-helveticaneue);
   padding: 0.8rem 1rem;
-  background-color: #000;
-  color: #fff;
-
+  background-color: var(--color-black);
+  color: var(--color-white);
   font-size: 1.1rem;
   text-decoration: none;
-  
-
   transition:
     background-color 0.25s ease,
     color 0.25s ease,
@@ -710,8 +696,8 @@ font-family: var(--font-helveticaneue);
 }
 
 .listen-button:hover {
-  background-color: #f42fa0;
-  color:var(--color-white);
+  background-color: var(--color-pink);
+  color: var(--color-white);
   transform: translateY(-3px);
 }
 
@@ -721,8 +707,7 @@ font-family: var(--font-helveticaneue);
 }
 
 
-
-@media (max-width: 768px) {
+@media (max-width: 578px) {
   .news {
     min-height: auto;
     padding: 1rem;
@@ -759,7 +744,7 @@ font-family: var(--font-helveticaneue);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 578px) {
   .events {
     min-height: auto;
     padding: 1.5rem 1rem 2rem;
@@ -819,8 +804,7 @@ font-family: var(--font-helveticaneue);
   }
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 578px) {
   .favorite {
     min-height: auto;
     padding: 1rem;
@@ -871,7 +855,7 @@ font-family: var(--font-helveticaneue);
   }
 
   .favorite .button {
-      display: block;
+    display: block;
     width: fit-content;
     margin: 1.5rem 0 0 auto;
     padding: 0.75rem 1rem;
@@ -880,7 +864,7 @@ font-family: var(--font-helveticaneue);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 578px) {
   .why {
     position: relative;
     min-height: auto;
@@ -920,7 +904,7 @@ font-family: var(--font-helveticaneue);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 578px) {
   .reel-to-real {
     min-height: auto;
     padding: 1.5rem 1rem 2.5rem;
@@ -993,7 +977,7 @@ font-family: var(--font-helveticaneue);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 578px) {
   footer {
     position: relative;
     min-height: auto;
@@ -1078,13 +1062,12 @@ font-family: var(--font-helveticaneue);
   }
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 578px) {
   .site-header {
     padding: 0.5rem 1rem;
     max-height: 5rem;
     flex-wrap: wrap;
-    background: white;
+    background: var(--color-white);
     box-sizing: border-box;
   }
 
@@ -1100,12 +1083,10 @@ font-family: var(--font-helveticaneue);
     z-index: 1003;
   }
 
-  /* Menu fermé */
   .main-nav {
     display: none;
   }
 
-  /* Menu ouvert : fond blanc plein écran */
   .main-nav.is-open {
     display: block;
     position: fixed;
@@ -1115,21 +1096,19 @@ font-family: var(--font-helveticaneue);
     height: 100dvh;
     padding: 9rem 1.25rem 2rem;
     box-sizing: border-box;
-    background: white;
+    background: var(--color-white);
     z-index: 1001;
     overflow-y: auto;
-      display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-
     position: fixed;
     inset: 0;
     width: 100%;
     height: 100vh;
     height: 100dvh;
-
     padding: 7rem 1.25rem 2rem;
     box-sizing: border-box;
     background: var(--color-white);
@@ -1151,9 +1130,6 @@ font-family: var(--font-helveticaneue);
     gap: 0.75rem;
   }
 
-
-
-  /* Liens du menu */
   .main-nav .subject {
     display: flex;
     flex-direction: column;
@@ -1166,7 +1142,8 @@ font-family: var(--font-helveticaneue);
     font-size: 1.5rem;
     text-align: center;
   }
-    .header-right .lang {
+
+  .header-right .lang {
     display: none;
   }
 
@@ -1177,8 +1154,6 @@ font-family: var(--font-helveticaneue);
     gap: 0.75rem;
   }
 
-
-  /* Animation du bouton burger en croix */
   .burger span {
     color: var(--color-blue);
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -1195,13 +1170,9 @@ font-family: var(--font-helveticaneue);
   .burger.is-open span:nth-child(3) {
     transform: translateY(-0.45rem) rotate(-45deg);
   }
-
 }
 
-/* VERSION MOBILE — PAGE ARTICLE */
-@media (max-width: 768px) {
-
-  /* ARTICLE PRINCIPAL */
+@media (max-width: 578px) {
   .article-page {
     position: relative;
     display: flex;
@@ -1212,7 +1183,6 @@ font-family: var(--font-helveticaneue);
     color: var(--color-black);
   }
 
-  /* LIEN RETOUR */
   .back-link {
     display: flex;
     align-items: center;
@@ -1222,7 +1192,6 @@ font-family: var(--font-helveticaneue);
     color: var(--color-black);
   }
 
-  /* IMAGE PRINCIPALE */
   .article-page > img {
     display: block;
     width: 100%;
@@ -1233,7 +1202,6 @@ font-family: var(--font-helveticaneue);
     margin: 0;
   }
 
-  /* TITRE SUR L'IMAGE */
   .article-page h2 {
     position: relative;
     z-index: 1;
@@ -1247,7 +1215,6 @@ font-family: var(--font-helveticaneue);
     overflow-wrap: anywhere;
   }
 
-  /* TEXTE DE L'ARTICLE */
   .article-page p {
     font-family: var(--font-helveticaneue);
     font-size: 0.875rem;
@@ -1258,7 +1225,6 @@ font-family: var(--font-helveticaneue);
     padding: 1rem 1.25rem 2rem;
   }
 
-  /* À PROPOS DE SUPREMNOVA */
   .about-supremnova {
     position: relative;
     min-height: auto;
@@ -1269,7 +1235,6 @@ font-family: var(--font-helveticaneue);
     color: var(--color-pink);
   }
 
-  /* IMAGE DERRIÈRE LE TITRE */
   .about-supremnova img {
     position: absolute;
     top: 0;
@@ -1300,7 +1265,6 @@ font-family: var(--font-helveticaneue);
     padding: 0 1rem;
   }
 
-  /* BIOGRAPHIE */
   .about-supremnova p {
     position: relative;
     z-index: 1;
@@ -1313,7 +1277,6 @@ font-family: var(--font-helveticaneue);
     padding: 0 0 1rem;
   }
 
-  /* BOUTON ÉCOUTER */
   .about-supremnova button {
     position: relative;
     z-index: 1;
@@ -1323,13 +1286,10 @@ font-family: var(--font-helveticaneue);
     padding: 0.4rem 0.75rem;
     font-size: 0.7rem;
   }
-
 }
 
-@media (max-width: 768px) {
+@media (max-width: 578px) {
   .hero {
     display: none;
   }
 }
-
-
