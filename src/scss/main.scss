@@ -707,7 +707,8 @@ footer p {
 }
 
 
-@media (max-width: 578px) {
+@media (min-width: 360px) and (max-width: 578px) {
+
   .news {
     min-height: auto;
     padding: 1rem;
@@ -716,7 +717,7 @@ footer p {
   }
 
   .news .big-titles {
-    font-size: 8rem;
+    font-size: 5rem;
     line-height: 1;
     letter-spacing: -0.04em;
     margin-top: 0;
@@ -744,7 +745,7 @@ footer p {
   }
 }
 
-@media (max-width: 578px) {
+@media (min-width: 360px) and (max-width: 578px) {
   .events {
     min-height: auto;
     padding: 1.5rem 1rem 2rem;
@@ -752,7 +753,7 @@ footer p {
   }
 
   .events .big-titles {
-    font-size: 7.5rem;
+    font-size: 4.5rem;
     line-height: 0.9;
     letter-spacing: -0.04em;
     text-align: center;
@@ -804,7 +805,7 @@ footer p {
   }
 }
 
-@media (max-width: 578px) {
+@media (min-width: 360px) and (max-width: 578px) {
   .favorite {
     min-height: auto;
     padding: 1rem;
@@ -863,8 +864,7 @@ footer p {
     line-height: 1.2;
   }
 }
-
-@media (max-width: 578px) {
+@media (min-width: 360px) and (max-width: 578px) {
   .why {
     position: relative;
     min-height: auto;
@@ -904,7 +904,7 @@ footer p {
   }
 }
 
-@media (max-width: 578px) {
+@media (min-width: 360px) and (max-width: 578px) {
   .reel-to-real {
     min-height: auto;
     padding: 1.5rem 1rem 2.5rem;
@@ -913,7 +913,7 @@ footer p {
   }
 
   .reel-to-real .big-titles {
-    font-size: 7.5rem;
+    font-size: 4.5rem;
     line-height: 0.95;
     letter-spacing: -0.04em;
     margin-top: 0;
@@ -953,7 +953,7 @@ footer p {
   }
 
   .reel-to-real__content .video-content h3 {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     line-height: 1.05;
     margin: 0 0 0.75rem;
   }
@@ -977,7 +977,7 @@ footer p {
   }
 }
 
-@media (max-width: 578px) {
+@media (min-width: 360px) and (max-width: 578px) {
   footer {
     position: relative;
     min-height: auto;
@@ -1056,13 +1056,13 @@ footer p {
     bottom: -0.3em;
     left: 0.25rem;
     margin: 0;
-    font-size: 8.5rem;
+    font-size: 5.5rem;
     line-height: 0.9;
     white-space: nowrap;
   }
 }
 
-@media (max-width: 578px) {
+@media (min-width: 360px) and (max-width: 578px) {
   .site-header {
     padding: 0.5rem 1rem;
     max-height: 5rem;
@@ -1172,7 +1172,7 @@ footer p {
   }
 }
 
-@media (max-width: 578px) {
+@media (min-width: 360px) and (max-width: 578px) {
   .article-page {
     position: relative;
     display: flex;
@@ -1288,8 +1288,31 @@ footer p {
   }
 }
 
-@media (max-width: 578px) {
+@media (min-width: 360px) and (max-width: 578px) {
   .hero {
     display: none;
+  }
+}
+@media (min-width: 360px) and (max-width: 578px) {
+
+  .big-card h2,
+  .big-card h3,
+  .video-content h2,
+  .video-content h3 {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    line-height: 1.1;
+    overflow-wrap: break-word;
+  }
+
+  .big-card p, {
+    font-size: clamp(0.75rem, 2.8vw, 0.9rem);
+    line-height: 1.4;
+    overflow-wrap: break-word;
+  }
+
+  .big-card,
+  .video-content {
+    min-width: 0;
+    box-sizing: border-box;
   }
 }
